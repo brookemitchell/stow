@@ -491,7 +491,6 @@ you should place your code here."
    evil-move-cursor-back nil
    javascript-disable-tern-missing-warning t)
 
-  (setq-default evil-escape-key-sequence "df")
 
   (setq
    company-minimum-prefix-length 1
@@ -503,6 +502,7 @@ you should place your code here."
   (add-hook 'jasminejs-mode-hook (lambda () (jasminejs-add-snippets-to-yas-snippet-dirs)))
 
   (setq-default
+   evil-escape-key-sequence "df"
    ;; js2-mode
    js2-basic-offset 2
    ;; web-mode
@@ -516,6 +516,7 @@ you should place your code here."
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
+
   (add-hook 'js2-mode-hook
             (lambda ()
               'js2-mode-hide-warnings-and-errors
@@ -570,6 +571,7 @@ you should place your code here."
 
 
     )
+  )
 
 
 ;; Do not write anything past this comment. This is where Emacs will
